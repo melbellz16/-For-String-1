@@ -2,7 +2,7 @@ class Main {
   public static void main(String[] args) {
    boolean flag = false;
     int age = 30;
-      age +=  45;
+      age +=  1;
     System.out.println("I'm"+ age + " years old.");
     //Создаем массив данных.String-  обьект
     String[] names = new String[] { "Josh", "Bill", "Andrew"};
@@ -17,6 +17,9 @@ class Main {
     if (age > 70){
       System.out.println("Too old");
       // меняем возраст в age +=
+    } else{
+      System.out.println("Too young");
+      //меняем ,как было в age на 1
     }
     }
 }

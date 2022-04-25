@@ -2,7 +2,7 @@ class Main {
   public static void main(String[] args) {
    boolean flag = false;
     int age = 30;
-      age +=  40;
+      age +=  5;
     System.out.println("I'm"+ age + " years old.");
     //Создаем массив данных.String-  обьект
     String[] names = new String[] { "Josh", "Bill", "Andrew"};
@@ -13,14 +13,24 @@ class Main {
     }
     //Для каждого элемента массива мы выполняем код,который находится в фигурных скобках
 //Добавляем еще один элемент в массив "Andrew"
+    
+    printMessage(age);
+    // вызываем метод  printMessage из нашего главное основного метода main. Передаем возраст в (age)
+    }
+  //Создаем метод 
+  static void printMessage(int age){
+    //static void -ничего не принимает, printMessage - название метода ,(int age)- то,что принимает
     //Создаем новые условия с помощью if
-    if (age > 70){
+   
+     if (age > 70){
       System.out.println("Too old");
       // меняем возраст в age +=
     } else if (age >= 40) {
       System.out.println("Age is more than 40 but less than 70");
       //меняем ,как было в age на 40
       //Если мы хотим включить значение больше 40, то мы должны написать в условие >=40(где указано else if)
+    } else {
+      System.out.println("Young");
     }
-    }
+  }
 }

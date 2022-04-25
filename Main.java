@@ -17,8 +17,8 @@ class Main {
     if (age > 70){
       System.out.println("Too old");
       // меняем возраст в age +=
-    } else{
-      System.out.println("Too young");
+    } else if (age > 40) {
+      System.out.println("Age is more than 40 but less than 70");
       //меняем ,как было в age на 1
     }
     }

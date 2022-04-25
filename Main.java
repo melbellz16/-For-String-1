@@ -2,7 +2,7 @@ class Main {
   public static void main(String[] args) {
    boolean flag = false;
     int age = 30;
-      age +=  1;
+      age +=  45;
     System.out.println("I'm"+ age + " years old.");
     //Создаем массив данных.String-  обьект
     String[] names = new String[] { "Josh", "Bill", "Andrew"};
@@ -13,6 +13,10 @@ class Main {
     }
     //Для каждого элемента массива мы выполняем код,который находится в фигурных скобках
 //Добавляем еще один элемент в массив "Andrew"
-    
+    //Создаем новые условия с помощью if
+    if (age > 70){
+      System.out.println("Too old");
+      // меняем возраст в age +=
+    }
     }
 }
